@@ -81,13 +81,25 @@ class CalcController < ApplicationController
 
   #------------------------------------------------------------
 
-  def payment
+  def random
 
     render ({ :template => "layouts/random"})
 
   end
 
   #------------------------------------------------------------
+
+  def random_result
+    
+      @min_number = params[:user_min].to_f
+      @max_number = params[:user_max].to_f
+
+      @random_number = rand(@min_number..@max_number)
+
+
+      render ({ :template => "layouts/random_result"})
+
+  end
 
 
 end # Of class.
