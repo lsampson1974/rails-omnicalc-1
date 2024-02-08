@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 # SQUARED
 
     get("/", { :controller => "calc", :action => "squared"})
-    get("/squared/new", { :controller => "calc", :action => "squared"})
+    get("/square/new", { :controller => "calc", :action => "squared"})
     get("/square_result", { :controller => "calc", :action => "square_result"})
 
 #-------------------------------------------------------------------------------------    
